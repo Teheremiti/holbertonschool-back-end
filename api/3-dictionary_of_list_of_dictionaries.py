@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
     for user in USERS:
         user_tasks = []
-        for task in values:
+        for task in user_tasks:
             if task[0] == user[0]:
                 user_tasks.append({"username": user[1], "task": task[1],
                                    "completed": task[2]})
