@@ -22,10 +22,10 @@ if __name__ == "__main__":
 
     with open(f"{USER_ID}.csv", mode='w') as f:
         Emp_tasks = csv.writer(f, delimiter=',', quotechar='"',
-                          quoting=csv.QUOTE_ALL)
+                               quoting=csv.QUOTE_ALL)
         for task in fieldsTodo:
             if task.get('userId') == USER_ID:
                 TASK_COMPLETED_STATUS = task['completed']
                 TASK_TITLE = task['title']
                 Emp_tasks.writerow([USER_ID, USERNAME, TASK_COMPLETED_STATUS,
-                               TASK_TITLE])
+                                   TASK_TITLE])
