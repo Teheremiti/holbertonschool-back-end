@@ -26,7 +26,7 @@ if __name__ == "__main__":
             TASK_COMPLETED_STATUS = task['completed']
             TASK_TITLE = task['title']
             task_details = {"task": TASK_TITLE, "completed":
-                          TASK_COMPLETED_STATUS, "username": USERNAME}
+                            TASK_COMPLETED_STATUS, "username": USERNAME}
             tasks.append(task_details)
     Emp_tasks = {USER_ID: tasks}
     json_object = json.dumps(Emp_tasks)
